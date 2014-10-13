@@ -1,0 +1,66 @@
+import java.util.Scanner;  // needed for Scanner
+
+    /** A Java program that demonstrates console based input and output. */
+    public class calculateAMortgage 
+    {
+        // Create a single shared Scanner for keyboard input
+        private static Scanner scanner = new Scanner( System.in );
+
+        // Program execution starts here
+        public static void main ( String [] args )
+        {
+            // Prompt the user for name
+            System.out.print( "Enter your full name please. " );
+            String iinput = scanner.nextLine();
+	    System.out.println( "You entered the name "+ iinput+ "." );
+
+
+	    //Obtain and confirm amount borrowed
+	    System.out.print( "What is the amount borrowed please? " );
+	    int borrowed = Integer.parseInt( input );  // converts a String into an int value
+            System.out.println( "The amount borrowed is " + borrowed );
+
+
+	    //Obtain and confirm rate of interest
+	    System.out.print( "What is the rate of interest? " );
+	    int interestnumber = Integer.parseInt( input );  // converts a String into an int value
+            System.out.println( "Your entered rate of interest is " + interestnumber );
+
+	    //Obtain and confirm number of years to repay over
+	    System.out.print( "Over how many years  will you take to repay it? " );
+	    int yearsrepay = Integer.parseInt( input );  // converts a String into an int value
+            System.out.println( "input = " + "Number of years interest you want: " + number );
+
+
+	    System.out.print( "How much is the most you can repay each month ? " );
+	    int number = Integer.parseInt( input );  // converts a String into an int value
+            System.out.println( "input = " + "Number of years interest you want: " + number );
+
+ int x=0, y=0;
+
+            // Read a line of text from the user.
+            String iinput = scanner.nextLine();
+
+            // Display the input back to the user.
+            System.out.println( "Here is what you typed: = " + iinput );
+            // Prompt the user for x= number of years for interest
+            
+            System.out.print( "Put in the first number of years of interest: " );
+            // Read a line of text from the user.
+            String input = scanner.nextLine();
+           
+      
+            
+            
+            int number = Integer.parseInt( input );  // converts a String into an int value
+            System.out.println( "input = " + "Number of years interest you want: " + number );
+            x=number;
+            System.out.println( "First number of years interest you want with x: " + x );
+            System.out.print( "Put in the second number of years of interest: " );
+            int secondnumber = scanner.nextInt();  // from console input example above.
+            System.out.println( "Second number of years interest you want: " + secondnumber );
+            y=secondnumber;
+            System.out.println( "Second number of years interest you want with y: " + y );
+        } // end main method
+
+    } // end MyConsoleIO class
